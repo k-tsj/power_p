@@ -1,0 +1,16 @@
+= power_p
+== About
+Extend Kernel#p with power_assert.
+
+Note that power_p works only if p is written in the file.
+
+ $ cat test.rb
+ p { 3.times.to_a }
+
+ $ ruby -rpower_p test.rb
+ p { 3.times.to_a }
+       |     |
+       |     [0, 1, 2]
+       #<Enumerator: 3:times>
+
+== Travis Build Status {<img src="https://secure.travis-ci.org/k-tsj/power_p.png"/>}[http://travis-ci.org/k-tsj/power_p]
