@@ -17,7 +17,7 @@ Gem::Specification.new do |spec|
   spec.executables      = `git ls-files -- bin/*`.split("\n").map{|f| File.basename(f) }
   spec.require_paths    = ['lib']
 
-  spec.add_runtime_dependency 'power_assert'
+  spec.add_runtime_dependency 'power_assert', '>= 1.1.0'
   spec.add_development_dependency 'test-unit'
   spec.add_development_dependency 'rake'
   spec.extra_rdoc_files = ['README.rdoc']

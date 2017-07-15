@@ -4,6 +4,11 @@
 
 require "power_p/version"
 require 'power_assert'
+require 'power_p/core_ext'
+
+module PowerAssert
+  INTERNAL_LIB_DIRS[PowerP] = File.dirname(caller_locations(1, 1).first.path)
+end
 
 module PowerP
   def p(*, &blk)
