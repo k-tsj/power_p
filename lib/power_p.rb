@@ -14,9 +14,14 @@ module PowerP
   def p(*, &blk)
     if blk
       PowerAssert.start(blk, assertion_method: __callee__) do |pa|
-        val = pa.yield
-        puts pa.message_proc.call
-        val
+        begin
+          val = pa.yield
+          puts pa.message
+          val
+        rescue => e
+          puts pa.message
+          raise e
+        end
       end
     else
       super
