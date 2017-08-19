@@ -1,3 +1,3 @@
 module PowerP
-  VERSION = "0.0.2dev"
+  VERSION = "1.0.0"
 end
