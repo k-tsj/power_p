@@ -1,6 +1,6 @@
 # power_p.rb
 #
-# Copyright (C) 2014 Kazuki Tsujimoto, All rights reserved.
+# Copyright (C) 2014 Kazuki Tsujimoto
 
 require "power_p/version"
 require 'power_assert'
