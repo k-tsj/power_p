@@ -8,5 +8,3 @@ rvm:
   - 2.6.5
   - 2.7.0
   - ruby-head
-before_install:
-  - gem install rubygems-update -v '<3' && update_rubygems
