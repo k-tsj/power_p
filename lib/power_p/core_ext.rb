@@ -7,7 +7,7 @@ begin
   module PowerAssert
     class << self
       prepend Module.new {
-        def start(*)
+        def start(*, **)
           super do |ctx|
             disable_nesting_contexts(ctx) do
               yield ctx
